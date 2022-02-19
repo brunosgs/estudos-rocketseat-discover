@@ -1,0 +1,61 @@
+<!-- 
+    <form>
+    
+    - Elemento que definirá um formulário
+    - É um container estilo <section> <footer>
+
+    Atributos básicos
+    - action
+    - method
+-->
+<form action="" method="">
+    <!-- 
+        Quando utlizar o method="GET" o mesmo informa os dados quando submetido na URI 
+        com um '?' e separando com '&' : https://www.minhapagina.com/?name=Bruno&email=bruno@teste.com.br.
+        Já o POST faz não inclui na URI, mais sim no corpo do form.
+    -->
+</form>
+
+
+<!--
+    <fieldset>
+
+    - agrupamento de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+
+    Atributos especiais
+    - disabled
+        - desabilita todos os elementos internos
+        - não serão enviados ao submeter o formulário
+    - form
+        - o id de um formulário ao qual esse fieldset pertence
+        - não precisa estar dentro do formulário
+    - name
+        - nome do grupo
+
+    <legend>
+    - nome do agrupamento
+    - primeiro elemento dentro do fieldset
+-->
+<!-- Exemplo 1 com fieldset dentro do form -->
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+    <button>Enviar 1</button>
+</form>
+
+<!-- Exemplo 2 com o fieldset fora do form -->
+<form id="teste" action="">
+    <button>Enviar 2</button>
+</form>
+
+<fieldset form="teste" name="inputs-contact">
+    <legend>Teste form</legend>
+    <label for="">Teste</label>
+    <input type="text">
+</fieldset>

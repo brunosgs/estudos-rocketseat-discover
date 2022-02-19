@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+/* header {
+    height: 400px;
+    border: 7px dashed red;
+    padding: 16px;
+
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2FfReZEM58TmOURZrT2yzb&w=640&q=100);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: padding-box;
+    background-clip: padding-box;
+} */
+
+main {
+    color: purple;
+    padding: 8px;
+
+    background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2)), url(https://www.rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2FfReZEM58TmOURZrT2yzb&w=640&q=100) no-repeat right top / 50px border-box content-box fixed;
+    /* background: linear-gradient(269deg, green, blue, yellow, red); */
+}
