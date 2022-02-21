@@ -1,0 +1,69 @@
+<!--
+    <input type="email" />
+
+    - Espera que o usuário digite um email
+    - Irá validar se o valor digitado é um email
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+    - required
+    - multiple
+        * o campo irá receber 1 ou mais emails, separado por vírgulas
+
+    - minlength / maxlength
+        * O mínimo e/ou máximo valor que o campo irá conter
+
+    - size
+        * valor númerico indicando quantos caracteres esse campo deveria conter,
+        modificando o tamanho do campo para o usuário
+
+    - pattern
+        * Uso de expressão regular para validar o campo
+        * Exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br
+            * patter=".+@rocketseat\.com\.br"
+
+    - list
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário,
+        quais valores estão disponíveis
+            * Os valores do <datalist> que não forem compatíveis com o campo, não 
+            serão apresentados como sugestão.
+-->
+<form action="">
+    <input type="email" placeholder="Email" multiple>
+    <button type="submit">Enviar</button>
+</form>
+<!-- Exemplo com datalist:
+<form action="">
+    <datalist id="emailslist">
+        <option>teste@rocketseat.com.br</option>
+    </datalist>
+    <input type="email" list="emailslist">
+    <button type="submit">Enviar</button>
+</form> -->
+
+
+<!--
+    <input type="url" />
+
+    - Espera que o usuário digite uma url
+    - Irá validar se o valor digitado é uma url
+
+    - pattern
+        * Uso de expressão regular para validar o campo
+        * exemplo: o usuário só poderá colocar domínio.com.br
+            * pattern=".*\.com\.br\/.*"
+    
+    - spellcheck
+        * Habilitar a verificação ortográfica para este input com true|false ou não informando
+        nenhuma opção mas só a propriedade.
+-->
+
+<form action="">
+    <input type="url" placeholder="http://example.com.br" pattern=".*\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos" required>
+    <button type="submit">Enviar</button>
+</form>

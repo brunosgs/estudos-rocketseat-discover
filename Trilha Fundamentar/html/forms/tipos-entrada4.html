@@ -1,0 +1,95 @@
+<!--
+    <input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+
+    - invisível ao usuário
+    - será enviado com o formulário
+    - não receberá foco
+    - leitores de tela não percebem esse campo
+-->
+<input type="hidden" name="id" value="8">
+<br><br>
+
+
+<!--
+    <input type="radio">
+
+    - Projetado para selecionar uma única opção de um grupo de opções
+
+    # Atributos essenciais
+    - checked
+        indica que o campo foi marcado
+    - value
+        valor que aquele campo contém
+-->
+<fieldset>
+    <legend>Bora tomar um café?</legend>
+    <label for="sim">sim</label>
+    <input type="radio" id="sim" name="coffee" value="yes">
+
+    <label for="nao">não</label>
+    <input checked type="radio" id="nao" name="coffee" value="no">
+</fieldset>
+
+
+<!--
+    <textarea>
+    - mais de uma linha
+    - útil para textos grandes
+
+    # Atributos
+    - id
+    - name
+    - rows e cols
+    - maxlength e minlength
+    - wrap
+    - outros comuns aos <input>
+        - autocomplete, autofocus, disabled, placeholder, readonly, 
+        form, required
+-->
+<label for="message">Mensagem</label>
+<textarea id="message" cols="30" rows="10"></textarea>
+<br><br>
+
+
+<!--
+    <select> 
+    
+    - Controle que fornece um menu de opções
+
+    <option>
+    - Contém as opções a serem selecionadas
+    - Atributos necessários
+        - value
+    
+    # Atributos únicos
+    - multiple
+        Habilita múltiplas opções
+    - size
+        Quando opções visíveis?
+-->
+<label for="carselect">Qual o modelo do carro</label>
+<select name="carmodel" id="carselect">
+    <option value="">Selecione o modelo</option>
+    <option value="mercedez">C60</option>
+    <option value="bmw">i320</option>
+</select>
+<br><br>
+
+
+<!--
+    <optgroup>
+-->
+<label>Please choose one or more pets:
+    <select name="pets" multiple size="4">
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster" disabled>Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+            <option value="parrot">Dog</option>
+            <option value="macaw">Cat</option>
+            <option value="albatross" disabled>Hamster</option>
+        </optgroup>
+    </select>
+</label>

@@ -1,0 +1,85 @@
+<!--
+    <input type="file" />
+
+    - Usuário poderá escolher 1 ou mais arquivos para enviar no formulário
+
+    # Atributos
+
+    - value
+        - contém o arquivo a ser enviado
+    - accept
+        - descreve que tipos de arquivos serão aceitos
+        - exemplo: .doc, .docx, .pdf, .audio/*, image/png, .png
+    - files
+        - a lista de arquivo ou arquivos
+    - multiple
+        - permite o envio de múltiplos arquivos
+    
+    # Envio dos arquivos
+    Para envio dos arquivos o formulário deverá utilizar o método POST e o 
+    atributo enctype como "multipart/form-data". Sera só definido o enctype caso
+    o input seja do tipo file, caso contrario não há necessidade.
+-->
+<form action="POST" enctype="multipart/form-data">
+    <input type="file" accept=".doc">
+</form>
+<br><br><br>
+
+
+<!--
+    <input type="color"/>
+
+    - Interface para selecionar cor
+    - Color picker
+
+    # Atributos
+    - value: RGB
+        - Se inválido, o preto será exibido
+    - list
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário,
+        quais valores estão disponíveis
+            * Os valores do <datalist> que não forem compatíveis com o campo, não 
+            serão apresentados como sugestão.
+-->
+<datalist id="colorsdata">
+    <option>#0000ff</option>
+</datalist>
+<input type="color" value="#ff0000" list="colorsdata" />
+<br><br><br>
+
+
+<!--
+    <input type="checkbox">
+
+    - Caixar que podem ser marcadas
+    - Selecionar um valor para ser enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    # Atributos
+    - globais
+    - value
+        * valor que aquele campo contém
+        * se não estiver presente, o padrão é 'on'
+    - checked
+        * para deixar o campo marcado por padrão
+-->
+<label for="subscribe">Receber notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe">
+
+<!--
+    Marcar múltiplos valores
+
+    - Usararemos o atributo 'name' com o mesmo nome para os diversos campos
+-->
+<fieldset>
+    <legend>Choose your interests</legend>
+    <div>
+        <input type="checkbox" name="interest" id="coding" value="coding" checked>
+        <label for="coding">Coding</label>
+    </div>
+    <div>
+        <input type="checkbox" name="interest" id="music" value="music">
+        <label for="music">Music</label>
+    </div>
+</fieldset>
