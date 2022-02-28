@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+    border: 1px dashed #ff0000;
+    flex-direction: column;
+
+    justify-content: space-around;
+    height: 250px;
+}
+
+.box div {
+    border: 1px solid;
+}
