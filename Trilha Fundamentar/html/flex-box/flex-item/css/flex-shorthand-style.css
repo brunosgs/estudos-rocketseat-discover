@@ -1,0 +1,10 @@
+.box {
+    display: flex;
+    border: 1px dashed #ff0000;
+}
+
+.box div {
+    border: 1px solid;
+    /* flex: flex-grow | flex-shrink / flex-basis | flex-basis*/
+    flex: 1;
+}
