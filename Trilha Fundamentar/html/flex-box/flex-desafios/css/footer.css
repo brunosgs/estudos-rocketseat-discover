@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #c6c6c6;
+}
+
+footer>div {
+    padding: 1rem;
+}
